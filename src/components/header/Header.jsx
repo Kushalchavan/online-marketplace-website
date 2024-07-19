@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { IoSearch } from "react-icons/io5";
+import logo from '../../assets/img/Daco_4795395.png'
 
 const Header = () => {
   return (
@@ -11,7 +12,7 @@ const Header = () => {
         <div className="top-navbar">
           <div className="left">
             <Link to="/">
-              <img src="../../assets/img/Daco_4795395.png" alt="logo" />
+              <img src={logo} alt="logo" />
             </Link>
             <div className="input">
               <input type="text" />
