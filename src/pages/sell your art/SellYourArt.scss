@@ -1,0 +1,67 @@
+@import "../../styles/breakpoints.scss";
+
+.sellYourArt {
+  width: 100%;
+  padding: 3rem;
+  background-color: #0066ff;
+  margin-top: 8.6rem;
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  
+  @include md {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .left-image {
+    img {
+      width: 41rem;
+      height: 28rem;
+
+      @include sm {
+        width: 25rem;
+        height: 20rem;
+      }
+      
+    }
+  }
+
+  .right-heading {
+    padding: 3rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    h1 {
+      font-size: 2.4rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    button {
+      width: max-content;
+      padding: 1rem 1.5rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+      background-color: #F3556C;
+      border: none;
+      outline: none;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+      @include sm {
+        margin-left: 2rem;
+      }
+    }
+  }
+}

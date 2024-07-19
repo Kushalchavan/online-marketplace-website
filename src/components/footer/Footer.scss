@@ -1,0 +1,62 @@
+@import '../../styles/breakpoints.scss';
+
+footer {
+  width: 100%;
+  background-color: #070027;
+  color: #fff;
+
+  .footer-section {
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+
+    @include sm {
+      flex-direction: column;  
+      
+    }
+
+    ul > li {
+      list-style-type: none;
+      padding: 0.6rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+
+      
+
+      &:nth-child(1) {
+        font-weight: bold;
+        cursor: auto;
+        margin-bottom: 1rem;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+
+  }
+  hr {
+    height: 0;
+    border: 1px solid rgb(94, 91, 91);
+  }
+
+  .user-agreement {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    color: darkgray;
+  }
+
+  #copywrite {
+    text-align: center;
+    font-size: .7rem;
+    color: darkgray;
+    padding: 2rem;
+  }
+}
