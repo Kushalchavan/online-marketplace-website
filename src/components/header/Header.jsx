@@ -11,7 +11,7 @@ const Header = () => {
         <div className="top-navbar">
           <div className="left">
             <Link to="/">
-              <img src="/public/Daco_4795395.png" alt="logo" />
+              <img src="../../assets/img/Daco_4795395.png" alt="logo" />
             </Link>
             <div className="input">
               <input type="text" />
